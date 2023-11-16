@@ -1,11 +1,10 @@
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      
+       <img src = {`https://commfind.s3.ap-south-1.amazonaws.com/cfa3.png`}></img>
     </>
   )
 }
