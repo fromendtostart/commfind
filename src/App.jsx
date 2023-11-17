@@ -28,9 +28,13 @@ function App() {
 
 
   return (
-    <>
-        
-    </>
+    <div className='app'>
+      {data.map((key, index) => (
+          <div className='image' key={index}>
+            <img src={`https://commfind.s3.ap-south-1.amazonaws.com/${key}`}></img>
+          </div>
+        ))}  
+    </div>
   )
 }
 
