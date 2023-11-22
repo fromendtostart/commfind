@@ -29,12 +29,13 @@ function Dashboard() {
   return (
     <div className='dashboard'>
       <div className='header'>
-        <h1>Lost items</h1>
+        <h1 className='text-4xl text-center m-8'>Lost items</h1>
       </div>
-      <div className='images flex gap-16'>
+      <div className='images flex flex-wrap justify-around gap-16'>
       {data.map((key, index) => (
-          <div className='image' key={index}>
+          <div className='image flex flex-col flex-wrap gap-4' key={index}>
             <img src={`https://commfind.s3.ap-south-1.amazonaws.com/${key}`}></img>
+            <div className='itemname text-center'>{key.substring(0, key.indexOf('.'))}</div>
           </div>
         ))}   
       </div> 
