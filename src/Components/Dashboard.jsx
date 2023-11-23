@@ -34,7 +34,7 @@ function Dashboard() {
       </div>
       <div className='images flex flex-wrap justify-around gap-16'>
       {data.map((key, index) => (
-          <div className='image flex flex-col flex-wrap gap-4 max-w-sm rounded overflow-hidden shadow-lg p-6' key={index}>
+          <div className='image flex flex-col flex-wrap gap-4 max-w-sm rounded overflow-hidden shadow-lg p-6 hover:scale-105' key={index}>
             <img src={`https://commfind.s3.ap-south-1.amazonaws.com/${key}`}></img>
             <div className='itemname text-center'>{key.substring(0, key.indexOf('.'))}</div>
           </div>
