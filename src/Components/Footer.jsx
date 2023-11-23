@@ -4,9 +4,9 @@ function Footer(){
     <div className="container mx-auto flex justify-between items-center">
       <div>
         <h3 className="text-lg font-semibold mb-2">Contact Information</h3>
-        <p className="text-gray-500">LinkedIn</p>
-        <p className="text-gray-500">Twitter</p>
-        <p className="text-gray-500">Email</p>
+        <p className="text-gray-500"><a href= "https://in.linkedin.com/in/chandramaulig" target="_blank" rel="noreferrer">LinkedIn</a></p>
+        <p className="text-gray-500"><a href= "https://twitter.com/NervesOfSilicon" target="_blank" rel="noreferrer">Twitter</a></p>
+        <p className="text-gray-500"><a href= "mailto:chandramauliguptach@gmail.com" target="_blank" rel="noreferrer">Email</a></p>
       </div>
     </div>
   </footer>
