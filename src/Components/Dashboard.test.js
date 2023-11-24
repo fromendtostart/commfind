@@ -31,6 +31,22 @@ describe('Dashboard Component', () => {
     render(<Dashboard />);
   });
 
+  it('handles axios error gracefully', async () => {
+
+    const consoleErrorSpy = jest.spyOn(console, 'error').mockImplementation(() => {});
+
+    axios.get.mockRejectedValue(new Error('Network Error'));
+
+    render(<Dashboard />);
+
+    await waitFor(() => {
+        expect(consoleErrorSpy).toHaveBeenCalledWith(expect.stringMatching(/error fetching data/i), expect.anything());
+    });
+
+    consoleErrorSpy.mockRestore();
+
+  });
+
   it('fetches data and renders images', async () => {
     axios.get.mockResolvedValue({ data: mockXmlResponse });
 
