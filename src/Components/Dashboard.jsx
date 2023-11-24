@@ -22,7 +22,7 @@ function Dashboard() {
         console.log(keyArray);
       })
       .catch((error) => {
-        console.error("Error fetching data:", error);
+        console.error("Error fetching data :", error);
       });
   }, []);
 
