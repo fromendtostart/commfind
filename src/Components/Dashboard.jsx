@@ -30,8 +30,7 @@ function Dashboard() {
   return (
     <div className='dashboard'>
       <div className='header flex gap-2 items-center justify-center'>
-        <h2 className='text-4xl text-center m-8'>Lost items : </h2>
-        <h3 className='text-4xl text-center'>College campus</h3>
+        <h2 className='text-4xl text-center m-8'>Lost items : College Campus</h2>
       </div>
       <div className='images flex flex-wrap justify-around gap-16'>
       {data.map((key, index) => (
